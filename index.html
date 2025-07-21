@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Photo Feed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/boostrap.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4><i class="fab fa-instagram"></i> Instagram</h4>
+            <button class="btn btn-dark" onclick="document.getElementById( 'postModal').style.display='block'">Create a new post</button>
+
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-4">img src="img1.jpg" class="img-fluid" /></div>
+        <div class="col-4">img src="img2.jpg" class="img-fluid" /></div>
+        <div class="col-4">img src="img3.jpg" class="img-fluid" /></div>
+        <div class="col-4">img src="img4.jpg" class="img-fluid" /></div>
+        <div class="col-4">img src="img5.jpg" class="img-fluid" /></div>
+        <div class="col-4">img src="img6.jpg" class="img-fluid" /></div>
+        <div class="col-4">img scr="img7.jpg" class="img-fluid" /></div>
+        <div class="col-4">img scr="img8.jpg" class="img-fluid" /></div>
+        <div class="col-4">img src="img9.jpg" class="img-fluid" /></div>
+    </div>
+
+    <div id="postModal" class="modal-box">
+        <div class="model-content">
+            <span onclick="document.getElementById('postModal').style.display='none'" class="close">&times;</span>
+            <h5>Create a new post</h5>
+            <textarea placeholder="Add the caption of your post here..." class="form-control mb-2"></textarea>
+            <button class="btn btn-primary">Publish</button>
+        </div>
+    </div>
+    
+</body>
+</html>
